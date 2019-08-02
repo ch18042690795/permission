@@ -1,19 +1,20 @@
 package com.mmall.dao;
 
 import com.mmall.model.SysLog;
+import com.mmall.model.SysLogWithBLOBs;
 
 public interface SysLogMapper {
     int deleteByPrimaryKey(Integer id);
 
-    int insert(SysLog record);
+    int insert(SysLogWithBLOBs record);
 
-    int insertSelective(SysLog record);
+    int insertSelective(SysLogWithBLOBs record);
 
-    SysLog selectByPrimaryKey(Integer id);
+    SysLogWithBLOBs selectByPrimaryKey(Integer id);
 
-    int updateByPrimaryKeySelective(SysLog record);
+    int updateByPrimaryKeySelective(SysLogWithBLOBs record);
 
-    int updateByPrimaryKeyWithBLOBs(SysLog record);
+    int updateByPrimaryKeyWithBLOBs(SysLogWithBLOBs record);
 
     int updateByPrimaryKey(SysLog record);
 }
