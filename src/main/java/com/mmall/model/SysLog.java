@@ -17,8 +17,6 @@ public class SysLog {
 
     private Integer status;
 
-    private String oldValue;
-
     public Integer getId() {
         return id;
     }
@@ -73,13 +71,5 @@ public class SysLog {
 
     public void setStatus(Integer status) {
         this.status = status;
-    }
-
-    public String getOldValue() {
-        return oldValue;
-    }
-
-    public void setOldValue(String oldValue) {
-        this.oldValue = oldValue == null ? null : oldValue.trim();
     }
 }
