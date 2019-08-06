@@ -1,23 +1,28 @@
 package com.mmall.model;
 
-public class SysLogWithBLOBs extends SysLog {
-    private String oldValues;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-    private String newValues;
+public class SysLogWithBLOBs extends SysLog {
+    private String oldValue;
+
+    private String newValue;
 
     public String getOldValue() {
-        return oldValues;
+        return oldValue;
     }
 
     public void setOldValue(String oldValue) {
-        oldValues = (oldValue == null) ? null : oldValue.trim();
+        this.oldValue = oldValue == null ? null : oldValue.trim();
     }
 
     public String getNewValue() {
-        return newValues;
+        return newValue;
     }
 
     public void setNewValue(String newValue) {
-        newValues = newValue == null ? null : newValue.trim();
+        this.newValue = newValue == null ? null : newValue.trim();
     }
 }
